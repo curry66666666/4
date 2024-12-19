@@ -571,36 +571,38 @@ body.night-mode {
   cursor: pointer;
 }
 /* 手机端样式 */
-@media (max-width: 767px) {
+@media (max - width: 767px) {
   .navbar {
-      display: flex;
-      flex-wrap: wrap; /* 允许导航项换行 */
-      justify-content: space-between; /* 导航项两端对齐 */
-      background-color: #f8f9fa;
-      padding: 10px;
-  }
+        display: flex;
+        flex - wrap: wrap;
+        justify - content: space - between;
+        background - color: #f8f9fa;
+        padding: 10px;
+    }
 
   .navbar a {
-      flex: 1; /* 导航项平均分配空间 */
-      text-align: center; /* 文本居中 */
-      padding: 10px 0; /* 垂直方向上增加间距 */
-  }
+        flex: 1;
+        text - align: center;
+        padding: 10px 0;
+        font - size: 8px; /* 减小字体大小 */
+    }
 
-  .search-box {
-      display: block; /* 显示搜索框 */
-      width: 100%;
-      padding: 10px;
-      background-color: #e9ecef;
-      margin-top: 10px; /* 与导航栏保持一定距离 */
-  }
+  .search - box {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background - color: #e9ecef;
+        margin - top: 10px;
+    }
 
-  .carousel {
-      width: 100%; /* 确保轮播图宽度与手机屏幕一致 */
-      margin-top: 10px; /* 与搜索框保持一定距离 */
-  }
+    /* 使用更具体的选择器确保轮播图样式生效 */
+  .search - box +.carousel {
+        width: 100%;
+        margin - top: 20px; /* 增加轮播图与搜索框的间距 */
+    }
 
   .carousel img {
-      width: 100%;
-      height: auto; /* 保持图片比例 */
-  }
+        width: 100%;
+        height: auto;
+    }
 }
